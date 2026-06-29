@@ -1,0 +1,14 @@
+name: test workflow
+on: push
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get code
+        run: npm install
+
+      - name: run tests
+        run: npm test
